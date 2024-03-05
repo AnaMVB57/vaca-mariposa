@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    /*___________Fuente de títulos___________*/
+    font-family: 'carton_six';
+    src: url(../fonts/Carton_Six.ttf);
+}
+
+* {
+    /*____ Formato de la página ___*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*___________Paleta de colores___________*/
+    --prin-pale: rgb(245, 211, 225);
+    --prin-rosa: rgb(241, 138, 189);
+    --prin-azul: rgb(27, 68, 138);
+    --prin-amarillo: rgb(247, 179, 80);
+    --prin-fucsia: rgb(232, 29, 116);
+    --prin-fondo: url(../images/Fondo-01.png);
+}
+
+/* ___________BODY___________ */
+
+body {
+    background-color: var(--prin-pale);
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+}
+
+/* _______________________LOGO_______________________ */
+
+.header .logo img {
+    height: 75px;
+    width: auto;
+    padding-left: 1rem;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.05);
+}
+
+/* _______________________NAVBAR_______________________ */
+
+.navbar {
+    height: 100%;
+    width: 50vw;
+    font-family: "Poppin", sans-serif;
+    background-color: black;
+    display: flex;
+}
+
+.navbar a {
+
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding-top: 30px;
+}
+
+.navbar a:hover {
+    /*  Efectos para los botones   */
+    color: var(--prin-fucsia);
+    /* Cambia de color a las letras del botón  */
+}
+
+
+/* _______________________PRODUCTOS_______________________ */
+
+/* Contenedor de info de productos */
+.contenedor-principal {
+    display: flex;
+    padding-left: 2.5rem;
+}
+
+.producto {
+    width: 29.5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 10px;
+    padding: 3rem;
+    background-image: var(--prin-fondo);
+    transition: all 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem var(--prin-rosa);
+    cursor: pointer;
+}
+
+.producto-title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-size: 20px;
+}
+
+
+/*________________TABLAS_____________ */
+
+th {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+/*____________________PÁRRAFOS__________________*/
+
+p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 2rem;
+}
+
+.texto-bio {
+    padding: 2.5rem;
+}
+
+a {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*________________TÍTULOS/SUBTÍTULOS____________*/
+
+.title {
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    flex-basis: 100%px;
+    padding: 3rem;
+    font-family: 'carton_six';
+    font-size: 50px;
+}
+
+.subtitle {
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    flex-basis: 100%px;
+    padding: 3rem;
+    font-family: 'carton_six';
+    font-size: 30px;
+}
